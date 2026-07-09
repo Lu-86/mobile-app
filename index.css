@@ -18,7 +18,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 300%;
-    max-width: 350px;
+    max-width: 320px;
     height: 500px;
     padding: 30px;
     box-sizing: border-box;
@@ -33,7 +33,7 @@ body {
 
 #image-frog {
     width: 150%;
-    max-width: 300px;
+    max-width: 320px;
     border-radius: 5%;
     outline: none;
     display: block;
@@ -44,7 +44,7 @@ body {
 
 #input-field {
     width: 80%;
-    max-width: 250px;
+    max-width: 320px;
     padding: 5%;
     margin-bottom: 15px;
     background-color: rgb(197, 238, 201);
@@ -64,7 +64,7 @@ body {
 
 #add-button {
     width: 80%;
-    max-width: 250px;
+    max-width: 320px;
     padding: 5%;
     border-style: groove;
     border-radius: 30px;
