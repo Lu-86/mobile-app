@@ -21,15 +21,26 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
-    height: 500px;
-    border-radius: 40%;
-    background-position-y: -90px;
+    height: 300px;
+    border-radius: 2%;
+    background-position-y: -120px;
+    border-style: solid;
+    border-color: bisque;
 }
 
+#input-field {
+    margin-bottom: 10px;
+    background-color: rgb(197, 238, 201);
+    border-style: groove;
+    border-radius: 10px;
+    border-color: rgb(160, 235, 181);
+    text-align: center;
+}
 
-.input-field {
-    background-color: rgb(48, 153, 65);
-    border: 1px solid black;
-    height: 100px;
-    width: 100px;
+#add-button {
+    margin-bottom: -100px;
+    border-style: double;
+    border-radius: 5px;
+    border-color: rgb(241, 134, 134);
+    background-color: rgb(135, 223, 223);
 }
