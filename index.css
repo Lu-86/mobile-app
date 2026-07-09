@@ -7,10 +7,6 @@ body {
 
 #main-app {
     background-color: rgb(146, 170, 148);
-    background-image: url("https://i.pinimg.com/736x/2c/83/cd/2c83cd639ccd229f6650db09f632e6b3.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,27 +16,64 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 200px;
-    height: 300px;
+    width: 350%;
+    max-width: 350px;
+    height: 500px;
+    padding: 20px;
+    box-sizing: border-box;
     border-radius: 2%;
-    background-position-y: -120px;
     border-style: solid;
     border-color: bisque;
+    overflow: hidden;
+}
+
+#image-frog {
+    width: 150%;
+    max-width: 300px;
+    border: none;
+    outline: none;
+    display: block;
+    margin-bottom: 50px;
+    position: absolute;
+    z-index: 0;
 }
 
 #input-field {
-    margin-bottom: 10px;
+    width: 80%;
+    max-width: 250px;
+    padding: 5%;
+    margin-bottom: 15px;
     background-color: rgb(197, 238, 201);
     border-style: groove;
-    border-radius: 10px;
+    border-radius: 30px;
     border-color: rgb(160, 235, 181);
     text-align: center;
+    font-size: 1rem;
+    box-sizing: border-box;
+    z-index: 1;
+    font-family: "Cause", cursive;
+    font-optical-sizing: auto;
+    font-weight: 100%;
+    font-style: normal;
+    font-size: 1rem;
+
 }
 
 #add-button {
-    margin-bottom: -100px;
-    border-style: double;
-    border-radius: 5px;
-    border-color: rgb(241, 134, 134);
-    background-color: rgb(135, 223, 223);
+    width: 50%;
+    max-width: 150px;
+    padding: 3%;
+    border-style: groove;
+    border-radius: 30px;
+    border-color: rgb(194, 238, 136);
+    background-color: rgb(87, 189, 78);
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 1;
+    margin-bottom: -100%;
+    font-family: "Cause", cursive;
+    font-optical-sizing: auto;
+    font-weight: 100%;
+    font-style: normal;
+    font-size: 1rem;
 }
