@@ -42,6 +42,21 @@ body {
     z-index: 0;
 }
 
+#app-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin-top: -60%;
+    font-size: 2rem;
+    font-family: "Cause", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
 #input-field {
     width: 80%;
     max-width: 320px;
