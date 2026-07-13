@@ -7,7 +7,7 @@ const appSettings = {
 
 const app = initializeApp(appSettings);
 const database = getDatabase(app);
-const moviesInDB = ref(database, "movies")
+const shoppingItem = ref(database, "shoppingList")
 
 const itemValue = document.getElementById("input-field");
 const button = document.getElementById("add-button");
@@ -16,12 +16,12 @@ button.addEventListener("click", function () {
     let item = itemValue.value.trim();
 
     if (item !== "") {
-        push(moviesInDB, item);
+        push(shoppingItem, item);
         itemValue.value = "";
     }
 });
 
-onValue(moviesInDB, function (snapshot) {
+onValue(shoppingItem, function (snapshot) {
     const data = (snapshot.val());
     console.log(data);
 });
