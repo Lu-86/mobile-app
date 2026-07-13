@@ -95,4 +95,15 @@ body {
     font-style: normal;
     font-size: 1rem;
     box-shadow: 3px 3px 5px rgba(116, 212, 171);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+#add-button:hover {
+    background-color: rgba(140, 235, 185);
+    box-shadow: 4px 4px 8px rgba(116, 212, 171);
+}
+
+#add-button:active {
+    transform: scale(0.95) translateY(2px);
+    box-shadow: 1px 1px 3px rgba(116, 212, 171);
 }
