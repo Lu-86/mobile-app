@@ -8,11 +8,6 @@ body {
 
 #main-app {
     background-color: rgba(197, 212, 177);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -20,7 +15,6 @@ body {
     width: 300%;
     max-width: 320px;
     height: 500px;
-    padding: 30px;
     box-sizing: border-box;
     border-width: 10px;
     border-radius: 10%;
@@ -28,18 +22,18 @@ body {
     border-color: rgba(239, 230, 209);
     overflow: hidden;
     box-shadow: 12px 12px 1px rgba(100, 125, 100, 0.5);
-
 }
 
 #image-frog {
     width: 150%;
-    max-width: 320px;
+    max-width: 270px;
     border-radius: 5%;
     outline: none;
     display: block;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
     position: absolute;
     z-index: 0;
+    margin-top: -50%;
 }
 
 #app-title {
@@ -61,7 +55,6 @@ body {
     width: 80%;
     max-width: 320px;
     padding: 5%;
-    margin-bottom: 15px;
     background-color: rgb(197, 238, 201);
     border-style: groove;
     border-radius: 30px;
@@ -69,12 +62,15 @@ body {
     text-align: center;
     font-size: 1rem;
     box-sizing: border-box;
-    z-index: 1;
+    z-index: 2;
     font-family: "Cause", cursive;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #add-button {
@@ -87,8 +83,7 @@ body {
     background-color: rgba(162, 247, 204);
     box-sizing: border-box;
     cursor: pointer;
-    z-index: 1;
-    margin-bottom: -100%;
+    z-index: 2;
     font-family: "Cause", cursive;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -96,6 +91,10 @@ body {
     font-size: 1rem;
     box-shadow: 3px 3px 5px rgba(116, 212, 171);
     transition: transform 0.1s ease, box-shadow 0.1s ease;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #add-button:hover {
@@ -106,4 +105,40 @@ body {
 #add-button:active {
     transform: scale(0.95) translateY(2px);
     box-shadow: 1px 1px 3px rgba(116, 212, 171);
+}
+
+#shopping-list {
+    list-style-type: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-content: flex-start;
+    z-index: 1;
+    position: absolute;
+    top: 210px;
+    bottom: 125px;
+    left: 0;
+    right: 0;
+    padding: 15px 20px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20%;
+    border-color: rgba(60, 100, 60, 0.5);
+}
+
+#shopping-list li {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px 5px;
+    border-radius: 20px;
+    font-family: "Cause", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    word-break: break-word;
+
 }

@@ -21,6 +21,11 @@ button.addEventListener("click", function () {
     }
 });
 
+
+
+
+
+
 onValue(shoppingItem, function (snapshot) {
     const data = (snapshot.val());
     console.log(data);
